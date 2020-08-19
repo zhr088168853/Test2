@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>潜在用户调查</h2><br/>
+        <form action="LoginServlet" method="post">
+            姓名：<input type="text" name="username"/><br/>
+            Eamil:<input type="text" name="eamil"/><br/>
+            年龄：<input type="radio" name="age" value="小于18" checked=""/>小于18
+            <input type="radio" name="age" value="18-25" checked=""/>18-25
+            <input type="radio" name="age" value="26-40" checked=""/>26-40
+            <input type="radio" name="age" value="大于40" checked=""/>大于40<br/>
+            编程时间：
+            <select name="time"> 
+                <option value="1年内">1年内</option>
+                <option value="1-2年">1-2年</option>
+                <option value="3年以上">3年以上</option>
+            </select><br/>
+            所使用的操作系统：
+            <select name="os" multiple size="6">
+                <option value="win xp">win xp</option>
+                <option value="win2000/2003">win2000/2003</option>
+                <option value="linux">linux</option>
+                <option value="freeBSD">freeBSD</option>
+                <option value="mac os">mac os</option>
+                <option value="other">other</option>
+            </select><br/><br/>
+            使用的编程语言：
+            <input type="checkbox" name="language" value="C"/>C
+            <input type="checkbox" name="language" value="C++"/>C++
+            <input type="checkbox" name="language" value="C#"/>C#
+            <input type="checkbox" name="language" value="PYTHON"/>PYTHON
+            <input type="checkbox" name="language" value="JAVA"/>JAVA
+            <input type="checkbox" name="language" value="VB"/>VB
+            <input type="checkbox" name="language" value="DEPHI"/>DEPHI<br/>
+            建议：
+            <input type="text" name="advice"/><br/>
+            <input type="submit" name="提交"/>
+            <input type="reset" name="重置"/>       
+        </form>
+    </body>
+</html>
